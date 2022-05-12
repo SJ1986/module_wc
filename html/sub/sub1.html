@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="../resource/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../resource/css/style.css">
+        <link rel="stylesheet" href="../resource/css/fix.css">
+        <script type="text/javascript" src="../resource/js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="../resource/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="../resource/js/popper.min.js"></script>
+        <script type="text/javascript" src="../resource/js/aos.js"></script>
+        <script type="text/javascript" src="../resource/js/slick.js"></script>
+        <script type="text/javascript" src="../resource/js/swiper.min.js"></script>
+        <script type="text/javascript" src="../resource/js/common.js"></script>
+        <script type="text/javascript" src="../resource/js/sub.js"></script>
+        <title>워드앤코드 가이드v1.2 &gt; 기본</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#find-tabs" data-bs-offset="50" tabindex="0">
+        <div class="wrap">
+            <section class="lnb">
+                <h1><a href="../index.html"><img src="../resource/image/common/logo.png" alt="워드앤코드"></a></h1>
+                <ul class="codeGuide">
+                    <li>
+                        <a href="../index.html" class="on">코딩가이드</a>
+                        <ul>
+                            <li><a href="sub1.html" class="on">기본</a></li>
+                            <li><a href="sub2.html">버튼</a></li>
+                            <li><a href="sub3.html">아이콘</a></li>
+                            <li><a href="sub4.html">입력폼</a></li>
+                            <li><a href="sub5.html">테이블</a></li>
+                            <li><a href="sub6.html">기능</a></li>
+                            <li><a href="sub7.html">웹접근성</a></li>
+                            <li><a href="sub8.html">가이드 사용서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="container">
+                <div id="content">
+                    <div class="cg_schArea">
+                        <div class="sch  d-flex align-center">
+                            <label for="sch__input" class="font-s mr_10 color-white">
+                                SEARCH
+                            </label>
+                            <div class="form-row d-flex">
+                                <input type="text" class='headSch-input' id="sch__input" autocomplete="off" title="검색어입력" placeholder="검색어 입력">
+                                <button type="button" class='headSch-btn' title="검색버튼">
+                                    <img src="../resource/image/common/icon/icon_finder_b.png" alt="">
+                                </button>
+                            </div>
+                            <!--<div class="navigation d-flex ml_10">
+                                <a href="" type="button" class="navigation-item navigation-item__prev" onclick=""></a>
+                                <span id="navigation-item-current" class="navigation-item__title">
+                                    title
+                                </span>
+                                <a href="" type="button" class="navigation-item navigation-item__next ml_5" onclick=""></a>
+                            </div>-->
+                        </div>
+                        <h4 class="d-flex align-center p-3 fw-b text-left">
+                            BASIC
+                            <div class="d-flex ml_20 belong-element">
+                                <p class="belong-item belong-item--html toolTip" data-id="tooltip-html" data-bs-toggle="tooltip" title="HTML 필요">HTML</p>
+                                <p class="belong-item belong-item--php toolTip" data-id="tooltip-php" data-bs-toggle="tooltip" title="PHP 필요">PHP</p>
+                                <p class="belong-item belong-item--boot toolTip" data-id="tooltip-boot" data-bs-toggle="tooltip" title="Bootstrap 필요">B</p>
+                                <p class="belong-item belong-item--css toolTip" data-id="tooltip-css" data-bs-toggle="tooltip" title="css 필요">css</p>
+                                <p class="belong-item belong-item--js toolTip" data-id="tooltip-js" data-bs-toggle="tooltip" title="js 필요">js</p>
+                                <p class="belong-item belong-item--scss toolTip" data-id="tooltip-scss" data-bs-toggle="tooltip" title="scss 필요">scss</p>
+                            </div>
+                        </h4>
+                    </div>
+                    <div class="article-wrap scrollspy-example">
+                        <div class="find-tabs navbar" id="find-tabs">
+                            <p class="font-l fw-b underline-pad">BASIC</p>
+                            <a href="#basic-font" class="nav-link active">font</a>
+                            <a href="#basic-display" class="nav-link">display</a>
+                            <a href="#basic-position" class="nav-link">position</a>
+                            <a href="#basic-margin" class="nav-link">margin</a>
+                            <a href="#basic-padding" class="nav-link">padding</a>
+                            <a href="#basic-color" class="nav-link">color</a>
+                            <a href="#basic-textAlign" class="nav-link">text-align</a>
+                        </div>
+                        <article class="article-item" id="basic-font">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">font</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css" title="">fix</p>
+                                </div>
+                            </div>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <h1 class="fw-m d-flex align-center mb_10">
+                                        h1
+                                    </h1>
+                                    <span class="block-code">
+                                        h1{<br/>
+                                        <em></em>font-size:32px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2 class="fw-m d-flex align-center mb_10">
+                                        h2
+                                    </h2>
+                                    <span class="block-code">
+                                        h1{<br/>
+                                        <em></em>font-size:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-m d-flex align-center mb_10">
+                                        h3
+                                    </h3>
+                                    <span class="block-code">
+                                        h3{<br/>
+                                        <em></em>font-size:28px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4 class="fw-m d-flex align-center mb_10">
+                                        h4
+                                    </h4>
+                                    <span class="block-code">
+                                        h4{<br/>
+                                        <em></em>font-size:26px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <h5 class="fw-m d-flex align-center mb_10">
+                                        h5
+                                    </h5>
+                                    <span class="block-code">
+                                        h5{<br/>
+                                        <em></em>font-size:24px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <h6 class="fw-m d-flex align-center mb_10">
+                                        h6
+                                    </h6>
+                                    <span class="block-code">
+                                        h6{<br/>
+                                        <em></em>font-size:22px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <span class="font-xl fw-m d-block mb_10">font-xl</span>
+                                    <span class="block-code">
+                                        .font-xl{<br/>
+                                        <em></em>font-size:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-l fw-m d-block mb_10">font-l</span>
+                                    <span class="block-code">
+                                        .font-l{<br/>
+                                        <em></em>font-size:18px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-rm fw-m d-block mb_10">font-rm</span>
+                                    <span class="block-code">
+                                        .font-rm{<br/>
+                                        <em></em>font-size:16px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-m fw-m d-block mb_10">font-m</span>
+                                    <span class="block-code">
+                                        .font-m{<br/>
+                                        <em></em>font-size:14px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-s fw-m d-block mb_10">font-s</span>
+                                    <span class="block-code">
+                                        .font-s{<br/>
+                                        <em></em>font-size:12px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-xs fw-m d-block mb_10">font-xs</span>
+                                    <span class="block-code">
+                                        .font-xs{<br/>
+                                        <em></em>font-size:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <span class="font-l fw-b d-block mb_10">fw-b</span>
+                                    <span class="block-code">
+                                        .fw-b{<br/>
+                                        <em></em>font-weight:700;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-l fw-sb d-block mb_10">fw-sb</span>
+                                    <span class="block-code">
+                                        .fw-sb{<br/>
+                                        <em></em>font-weight:600;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-l fw-r d-block mb_10">fw-r</span>
+                                    <span class="block-code">
+                                        .fw-r{<br/>
+                                        <em></em>font-weight:500;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-l fw-m d-block mb_10">fw-m</span>
+                                    <span class="block-code">
+                                        .fw-m{<br/>
+                                        <em></em>font-weight:400;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-l fw-s d-block mb_10">fw-s</span>
+                                    <span class="block-code">
+                                        .fw-s{<br/>
+                                        <em></em>font-weight:300;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font-l fw-l d-block mb_10">fw-l</span>
+                                    <span class="block-code">
+                                        .fw-l{<br/>
+                                        <em></em>font-weight:200;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            font
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--scss" title="">mix</p>
+                                            <p class="belong-item belong-item--scss" title="">scss</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        @include font(13px,400,#000);<br/><br/>
+                                        @mixin font($font-size,$font-weight,$color){<br/>
+                                            font-size:$font-size;
+                                            font-weight:$font-weight;
+                                            color:$color;
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="basic-display">
+                            <h3 class="fw-m highlight highlight-yellow">display</h3>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="block-locate">
+                                        <div class="" style="">
+                                            <p class="ex-box ex-box--1" style="border:1px dashed #ddd;background:#fff">box1</p>
+                                        </div>
+                                        <div class="" style="">
+                                            <p class="ex-box ex-box--2 mt_10" style="border:1px dashed #ddd;background:#fff">box2</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            d-none
+                                            <!-- <em class="d-inline-block va-m line-deperate"></em> -->
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot toolTip" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .d-none{<br/>
+                                        <em></em>display:none;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate">
+                                        <div class="d-block">
+                                            <p class="ex-box ex-box--1">box1</p>
+                                        </div>
+                                        <div class="d-block mt_10">
+                                            <p class="ex-box ex-box--2">box2</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            d-block
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot toolTip" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .d-block{<br/>
+                                        <em></em>display:block;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate d-flex align-center justify-center">
+                                        <div class="d-flex">
+                                            <p class="ex-box ex-box--1">box1</p>
+                                            <p class="ex-box ex-box--2 ml_10">box2</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            d-inline-block
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot toolTip" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .d-inline-block{<br/>
+                                        <em></em>display:inline-block;<br/>
+                                        }
+                                    </span>
+                                </li>                         
+                                <li>
+                                    <div class="block-locate d-flex align-center justify-center">
+                                        <p class="d-list-item">box1</p>
+                                        <p class="d-list-item ml_10">box2</p>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            d-list-item
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--css" title="">fix</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .d-list-item{<br/>
+                                            <em></em>display:list-item;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate d-flex align-center justify-center">
+                                        <div class="d-table">
+                                            <p class="ex-box ex-box--1">
+                                                <span class="d-flex align-center justify-center" style="height:100%">box1</span>
+                                            </p>
+                                            <p class="ex-box ex-box--2 ml_10">
+                                                <span class="d-flex align-center justify-center" style="height:100%">box2</span>
+                                            </p>
+                                            <p class="ex-box ex-box--3 ml_10">
+                                                <span class="d-flex align-center justify-center" style="height:100%">box3</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            d-table
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot toolTip" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .d-table{<br/>
+                                        <em></em>display:table;<br/>
+                                        }
+                                    </span>
+                                    <p class="mt_10 color-red">※ 자식요소엔 table-cell</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="block-locate">
+                                            <div class=" d-grid">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 mt_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                d-grid
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .d-grid{<br/>
+                                            <em></em>display:grid;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="article-item__group flex-wrap">
+                                    <div>
+                                        <div class="block-locate d-flex">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                d-flex
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .d-flex{<br/>
+                                            <em></em>display:flex;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="block-locate d-flex align-start" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                align-start
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .align-start{<br/>
+                                            <em></em>align-items:flex-start;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex align-center" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                align-center
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .align-center{<br/>
+                                            <em></em>align-items:center;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex align-end" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                align-end
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .align-end{<br/>
+                                            <em></em>align-items:flex-end;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex  justify-start" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                justify-start
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .justify-start{<br/>
+                                            <em></em>justify-content:flex-start;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex  justify-center" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                justify-center
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .justify-center{<br/>
+                                            <em></em>justify-content:flex-center;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex  justify-end" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                justify-end
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .justify-end{<br/>
+                                            <em></em>justify-content:flex-end;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex justify-between w-100">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                justify-between
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .justify-between{<br/>
+                                            <em></em>justify-content:space-between;<br/>
+                                            }
+                                        </span>
+                                        <p class="mt_10 color-red">※ 요소 사이 넓이 균일</p>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex justify-around w-100">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                justify-around
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .justify-around{<br/>
+                                            <em></em>justify-content:space-around;<br/>
+                                            }
+                                        </span>
+                                        <p class="mt_10 color-red">※ 요소 둘레 넓이 균일</p>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex justify-evenly w-100">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                justify-evenly
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--css" title="">fix</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .justify-evenly{<br/>
+                                            <em></em>justify-content:space-evenly;<br/>
+                                            }
+                                        </span>
+                                        <p class="mt_10 color-red">※ 요소 양끝, 사이 넓이 균일</p>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex flex-wrap w-100">
+                                                <p class="ex-box ex-box--1 w-40">box1</p>
+                                                <p class="ex-box ex-box--2 w-40 ml_10">box2</p>
+                                                <p class="ex-box ex-box--3 w-40">box3</p>
+                                                <p class="ex-box ex-box--4 w-40 ml_10">box4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                flex-wrap
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .flex-wrap{<br/>
+                                            <em></em>flex-wrap:wrap;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex" style="border-top:1px dashed #ddd;border-bottom:1px dashed #ddd;">
+                                            <div class="d-flex flex-nowrap w-100">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                                <p class="ex-box ex-box--3 ml_10">box3</p>
+                                                <p class="ex-box ex-box--4 ml_10">box4</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                flex-nowrap
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .flex-nowrap{<br/>
+                                            <em></em>flex-nowrap:nowrap;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex">
+                                            <div class="d-flex flex-row">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 ml_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                flex-row
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .flex-row{<br/>
+                                            <em></em>flex-direction:row;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex">
+                                            <div class="d-flex flex-row-reverse">
+                                                <p class="ex-box ex-box--1 ml_10">box1</p>
+                                                <p class="ex-box ex-box--2 ">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                flex-row-reverse
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .flex-row-reverse{<br/>
+                                            <em></em>flex-direction:row-reverse;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex">
+                                            <div class="d-flex flex-column">
+                                                <p class="ex-box ex-box--1">box1</p>
+                                                <p class="ex-box ex-box--2 mt_10">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                flex-column
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .flex-column{<br/>
+                                            <em></em>flex-direction:column;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="block-locate d-flex">
+                                            <div class="d-flex flex-column-reverse">
+                                                <p class="ex-box ex-box--1 mt_10">box1</p>
+                                                <p class="ex-box ex-box--2">box2</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-center">
+                                            <span class="font-l fw-b d-block">
+                                                flex-column-reverse
+                                            </span>
+                                            <div class="d-flex belong-element ml_20">
+                                                <p class="belong-item belong-item--boot" title="">B</p>
+                                            </div>
+                                        </div>
+                                        <span class="block-code">
+                                            .flex-column-reverse{<br/>
+                                            <em></em>flex-direction:column-reverse;<br/>
+                                            }
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="basic-position">
+                            <h3 class="fw-m highlight highlight-yellow">position</h3>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            position-absolute
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .position-absolute{<br>
+                                        <em></em>position:absolute;<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            position-relative
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .position-relative{<br>
+                                        <em></em>position:relative;<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            position-fixed
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--boot" title="">B</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        .position-fixed{<br>
+                                        <em></em>position:fixed;<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            position
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--scss" title="">mix</p>
+                                            <p class="belong-item belong-item--scss" title="">scss</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        @include position(absolute, $t:0, $r:0, $l:0, $b:0);<br/><br/>
+                                        @mixin position($p:absolute,$t:null,$b:null,$l:null,$r:null){<br/>
+                                            position:$p;
+                                            top:$t;
+                                            bottom:$b;
+                                            left:$l;
+                                            right:$r;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            position-center
+                                        </span>
+                                        <div class="d-flex belong-element ml_20">
+                                            <p class="belong-item belong-item--scss" title="">mix</p>
+                                            <p class="belong-item belong-item--scss" title="">scss</p>
+                                        </div>
+                                    </div>
+                                    <span class="block-code">
+                                        @include position-center;<br/><br/>
+                                        @mixin position-center {<br/>
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%); <br/>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="basic-margin">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">margin</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css toolTip" title="">fix</p>
+                                </div>
+                            </div>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_0{<br/>
+                                        <em></em>margin:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_5{<br/>
+                                        <em></em>margin:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_10{<br/>
+                                        <em></em>margin:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_20{<br/>
+                                        <em></em>margin:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_30{<br/>
+                                        <em></em>margin:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_40{<br/>
+                                        <em></em>margin:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            m_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .m_50{<br/>
+                                        <em></em>margin:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_0{<br/>
+                                        <em></em>margin-left:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_5{<br/>
+                                        <em></em>margin-left:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_10{<br/>
+                                        <em></em>margin-left:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_15{<br/>
+                                        <em></em>margin-left:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_20{<br/>
+                                        <em></em>margin-left:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_25{<br/>
+                                        <em></em>margin-left:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_30{<br/>
+                                        <em></em>margin-left:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_35{<br/>
+                                        <em></em>margin-left:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_40{<br/>
+                                        <em></em>margin-left:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_45{<br/>
+                                        <em></em>margin-left:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ml_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .ml_50{<br/>
+                                        <em></em>margin-left:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_0{<br/>
+                                        <em></em>padding-top:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_5{<br/>
+                                        <em></em>padding-top:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_10{<br/>
+                                        <em></em>padding-top:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_15{<br/>
+                                        <em></em>padding-top:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_20{<br/>
+                                        <em></em>padding-top:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_25{<br/>
+                                        <em></em>padding-top:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_30{<br/>
+                                        <em></em>padding-top:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_35{<br/>
+                                        <em></em>padding-top:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_40{<br/>
+                                        <em></em>padding-top:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_45{<br/>
+                                        <em></em>padding-top:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mt_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mt_50{<br/>
+                                        <em></em>padding-top:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_0{<br/>
+                                        <em></em>padding-right:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_5{<br/>
+                                        <em></em>padding-right:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_10{<br/>
+                                        <em></em>padding-right:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_15{<br/>
+                                        <em></em>padding-right:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_20{<br/>
+                                        <em></em>padding-right:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_25{<br/>
+                                        <em></em>padding-right:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_30{<br/>
+                                        <em></em>padding-right:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_35{<br/>
+                                        <em></em>padding-right:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_40{<br/>
+                                        <em></em>padding-right:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_45{<br/>
+                                        <em></em>padding-right:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mr_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mr_50{<br/>
+                                        <em></em>padding-right:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_0{<br/>
+                                        <em></em>padding-bottom:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_5{<br/>
+                                        <em></em>padding-bottom:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_10{<br/>
+                                        <em></em>padding-bottom:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_15{<br/>
+                                        <em></em>padding-bottom:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_20{<br/>
+                                        <em></em>padding-bottom:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_25{<br/>
+                                        <em></em>padding-bottom:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_30{<br/>
+                                        <em></em>padding-bottom:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_35{<br/>
+                                        <em></em>padding-bottom:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_40{<br/>
+                                        <em></em>padding-bottom:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_45{<br/>
+                                        <em></em>padding-bottom:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            mb_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .mb_50{<br/>
+                                        <em></em>padding-bottom:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="basic-padding">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">padding</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css toolTip" title="">fix</p>
+                                </div>
+                            </div>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_0{<br/>
+                                        <em></em>padding:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_5{<br/>
+                                        <em></em>padding:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_10{<br/>
+                                        <em></em>padding:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_20{<br/>
+                                        <em></em>padding:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_30{<br/>
+                                        <em></em>padding:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_40{<br/>
+                                        <em></em>padding:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            p_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .p_50{<br/>
+                                        <em></em>padding:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_0{<br/>
+                                        <em></em>padding-left:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_5{<br/>
+                                        <em></em>padding-left:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_10{<br/>
+                                        <em></em>padding-left:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_15{<br/>
+                                        <em></em>padding-left:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_20{<br/>
+                                        <em></em>padding-left:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_25{<br/>
+                                        <em></em>padding-left:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_30{<br/>
+                                        <em></em>padding-left:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_35{<br/>
+                                        <em></em>padding-left:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_40{<br/>
+                                        <em></em>padding-left:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_45{<br/>
+                                        <em></em>padding-left:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pl_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pl_50{<br/>
+                                        <em></em>padding-left:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_0{<br/>
+                                        <em></em>padding-top:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_5{<br/>
+                                        <em></em>padding-top:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_10{<br/>
+                                        <em></em>padding-top:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_15{<br/>
+                                        <em></em>padding-top:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_20{<br/>
+                                        <em></em>padding-top:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_25{<br/>
+                                        <em></em>padding-top:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_30{<br/>
+                                        <em></em>padding-top:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_35{<br/>
+                                        <em></em>padding-top:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_40{<br/>
+                                        <em></em>padding-top:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_45{<br/>
+                                        <em></em>padding-top:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pt_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pt_50{<br/>
+                                        <em></em>padding-top:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_0{<br/>
+                                        <em></em>padding-right:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_5{<br/>
+                                        <em></em>padding-right:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_10{<br/>
+                                        <em></em>padding-right:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_15{<br/>
+                                        <em></em>padding-right:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_20{<br/>
+                                        <em></em>padding-right:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_25{<br/>
+                                        <em></em>padding-right:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_30{<br/>
+                                        <em></em>padding-right:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_35{<br/>
+                                        <em></em>padding-right:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_40{<br/>
+                                        <em></em>padding-right:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_45{<br/>
+                                        <em></em>padding-right:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pr_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pr_50{<br/>
+                                        <em></em>padding-right:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_0
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_0{<br/>
+                                        <em></em>padding-bottom:0;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_5
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_5{<br/>
+                                        <em></em>padding-bottom:5px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_10
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_10{<br/>
+                                        <em></em>padding-bottom:10px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_15
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_15{<br/>
+                                        <em></em>padding-bottom:15px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_20
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_20{<br/>
+                                        <em></em>padding-bottom:20px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_25
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_25{<br/>
+                                        <em></em>padding-bottom:25px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_30
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_30{<br/>
+                                        <em></em>padding-bottom:30px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_35
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_35{<br/>
+                                        <em></em>padding-bottom:35px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_40
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_40{<br/>
+                                        <em></em>padding-bottom:40px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_45
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_45{<br/>
+                                        <em></em>padding-bottom:45px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            pb_50
+                                        </span>                                    
+                                    </div>
+                                    <span class="block-code">
+                                        .pb_50{<br/>
+                                        <em></em>padding-bottom:50px;<br/>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="basic-color">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">color</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css toolTip" title="">fix</p>
+                                </div>
+                            </div>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <span class="color-red">
+                                        .color-red{<br/>
+                                        <em></em>color:var(--red);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-red color-white">
+                                        .bg-red{<br/>
+                                        <em></em>bg:var(--red);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-sizzlingRed">
+                                        .color-sizzlingRed{<br/>
+                                        <em></em>color:var(--sizzlingRed);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-sizzlingRed color-white">
+                                        .bg-sizzlingRed{<br/>
+                                        <em></em>bg:var(--sizzlingRed);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-candyPink">
+                                        .color-candyPink{<br/>
+                                        <em></em>color:var(--candyPink);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-candyPink color-white">
+                                        .bg-candyPink{<br/>
+                                        <em></em>bg:var(--candyPink);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-vermilion">
+                                        .color-vermilion{<br/>
+                                        <em></em>color:var(--vermilion);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-vermilion color-white">
+                                        .bg-vermilion{<br/>
+                                        <em></em>bg:var(--vermilion);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-chineseRed">
+                                        .color-chineseRed{<br/>
+                                        <em></em>color:var(--chineseRed);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-chineseRed color-white">
+                                        .bg-chineseRed{<br/>
+                                        <em></em>bg:var(--chineseRed);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-maroon">
+                                        .color-maroon{<br/>
+                                        <em></em>color:var(--maroon);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-maroon color-white">
+                                        .bg-maroon{<br/>
+                                        <em></em>bg:var(--maroon);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-redPurple">
+                                        .color-redPurple{<br/>
+                                        <em></em>color:var(--redPurple);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-redPurple color-white">
+                                        .bg-redPurple{<br/>
+                                        <em></em>bg:var(--redPurple);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-spanishOrange">
+                                        .color-spanishOrange{<br/>
+                                        <em></em>color:var(--spanishOrange);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-spanishOrange color-white">
+                                        .bg-spanishOrange{<br/>
+                                        <em></em>bg:var(--spanishOrange);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-havestGold">
+                                        .color-havestGold{<br/>
+                                        <em></em>color:var(--havestGold);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-havestGold color-white">
+                                        .bg-havestGold{<br/>
+                                        <em></em>bg:var(--havestGold);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-lemonYellow">
+                                        .color-lemonYellow{<br/>
+                                        <em></em>color:var(--lemonYellow);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-lemonYellow color-9">
+                                        .bg-lemonYellow{<br/>
+                                        <em></em>bg:var(--lemonYellow);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-balancedAlmond">
+                                        .color-balancedAlmond{<br/>
+                                        <em></em>color:var(--balancedAlmond);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-balancedAlmond color-white">
+                                        .bg-balancedAlmond{<br/>
+                                        <em></em>bg:var(--balancedAlmond);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-aliceBlue">
+                                        .color-aliceBlue{<br/>
+                                        <em></em>color:var(--aliceBlue);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-aliceBlue color-white">
+                                        .bg-aliceBlue{<br/>
+                                        <em></em>bg:var(--aliceBlue);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-columbiaBlue">
+                                        .color-columbiaBlue{<br/>
+                                        <em></em>color:var(--columbiaBlue);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-columbiaBlue color-white">
+                                        .bg-columbiaBlue{<br/>
+                                        <em></em>bg:var(--columbiaBlue);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-cyanProcess">
+                                        .color-cyanProcess{<br/>
+                                        <em></em>color:var(--cyanProcess);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-cyanProcess color-white">
+                                        .bg-cyanProcess{<br/>
+                                        <em></em>bg:var(--cyanProcess);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-carolinaBlue">
+                                        .color-carolinaBlue{<br/>
+                                        <em></em>color:var(--carolinaBlue);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-carolinaBlue color-white">
+                                        .bg-carolinaBlue{<br/>
+                                        <em></em>bg:var(--carolinaBlue);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-tuftsBlue">
+                                        .color-tuftsBlue{<br/>
+                                        <em></em>color:var(--tuftsBlue);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-tuftsBlue color-white">
+                                        .bg-tuftsBlue{<br/>
+                                        <em></em>bg:var(--tuftsBlue);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-bleuDeFrance">
+                                        .color-bleuDeFrance{<br/>
+                                        <em></em>color:var(--bleuDeFrance);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-bleuDeFrance color-white">
+                                        .bg-bleuDeFrance{<br/>
+                                        <em></em>bg:var(--bleuDeFrance);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-brightNavy">
+                                        .color-brightNavy{<br/>
+                                        <em></em>color:var(--brightNavy);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-brightNavy color-white">
+                                        .bg-brightNavy{<br/>
+                                        <em></em>bg:var(--brightNavy);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-hanBlue">
+                                        .color-hanBlue{<br/>
+                                        <em></em>color:var(--hanBlue);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-hanBlue color-white">
+                                        .bg-hanBlue{<br/>
+                                        <em></em>bg:var(--hanBlue);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-blueNCS">
+                                        .color-blueNCS{<br/>
+                                        <em></em>color:var(--blueNCS);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-blueNCS color-white">
+                                        .bg-blueNCS{<br/>
+                                        <em></em>bg:var(--blueNCS);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-blue">
+                                        .color-blue{<br/>
+                                        <em></em>color:var(--blue);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-blue color-white">
+                                        .bg-blue{<br/>
+                                        <em></em>bg:var(--blue);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-richBlack">
+                                        .color-richBlack{<br/>
+                                        <em></em>color:var(--richBlack);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-richBlack color-white">
+                                        .bg-richBlack{<br/>
+                                        <em></em>bg:var(--richBlack);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-raisinBlack">
+                                        .color-raisinBlack{<br/>
+                                        <em></em>color:var(--raisinBlack);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-raisinBlack color-white">
+                                        .bg-raisinBlack{<br/>
+                                        <em></em>bg:var(--raisinBlack);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-black">
+                                        .color-black{<br/>
+                                        <em></em>color:var(--black);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-black color-white">
+                                        .bg-black{<br/>
+                                        <em></em>bg:var(--black);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-slateGray">
+                                        .color-slateGray{<br/>
+                                        <em></em>color:var(--slateGray);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-slateGray color-white">
+                                        .bg-slateGray{<br/>
+                                        <em></em>bg:var(--slateGray);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-sonicSilver">
+                                        .color-sonicSilver{<br/>
+                                        <em></em>color:var(--sonicSilver);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-sonicSilver color-white">
+                                        .bg-sonicSilver{<br/>
+                                        <em></em>bg:var(--sonicSilver);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-quickSilver">
+                                        .color-quickSilver{<br/>
+                                        <em></em>color:var(--quickSilver);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-quickSilver color-white">
+                                        .bg-quickSilver{<br/>
+                                        <em></em>bg:var(--quickSilver);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-silverChalice">
+                                        .color-silverChalice{<br/>
+                                        <em></em>color:var(--silverChalice);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-silverChalice color-white">
+                                        .bg-silverChalice{<br/>
+                                        <em></em>bg:var(--silverChalice);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-lightGray">
+                                        .color-lightGray{<br/>
+                                        <em></em>color:var(--lightGray);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-lightGray color-white">
+                                        .bg-lightGray{<br/>
+                                        <em></em>bg:var(--lightGray);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-gainsboro">
+                                        .color-gainsboro{<br/>
+                                        <em></em>color:var(--gainsboro);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-gainsboro color-white">
+                                        .bg-gainsboro{<br/>
+                                        <em></em>bg:var(--gainsboro);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-lavendarBlush">
+                                        .color-lavendarBlush{<br/>
+                                        <em></em>color:var(--lavendarBlush);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-lavendarBlush color-white">
+                                        .bg-lavendarBlush{<br/>
+                                        <em></em>bg:var(--lavendarBlush);<br/>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="color-white bg-gainsboro">
+                                        .color-white{<br/>
+                                        <em></em>color:var(--white);<br/>
+                                        }
+                                    </span>
+                                    <span class="d-block mt_10 p-3 bg-white color-5">
+                                        .bg-white{<br/>
+                                        <em></em>bg:var(--white);<br/>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="basic-textAlign">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">text-align</h3> 
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css toolTip" title="">fix</p>
+                                </div>
+                            </div>
+                            <p class="mt_10 color-red">align은 요소들이 inline 상태일때 동일선상의 다른 요소들 기준으로 같이 적용시켜야함</p>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="block-locate">
+                                        <p class="ex-box ex-box--1 va-t" style="display:inline-block;min-height:100px;border:1px dashed #ddd;background:#fff">box1</p>
+                                        <span class="va-t">top</span>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            va-t
+                                        </span>
+                                    </div>
+                                    <span class="block-code">
+                                        .va-t{<br>
+                                        <em></em>vertical-align:top<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate">
+                                        <p class="ex-box ex-box--1 va-m" style="display:inline-block;min-height:100px;border:1px dashed #ddd;background:#fff">box1</p>
+                                        <span class="va-m">middle</span>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            va-m
+                                        </span>
+                                    </div>
+                                    <span class="block-code">
+                                        .va-m{<br>
+                                        <em></em>vertical-align:middle<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate">
+                                        <p class="ex-box ex-box--1 va-b" style="display:inline-block;min-height:100px;border:1px dashed #ddd;background:#fff">box1</p>
+                                        <span class="va-b">bottom</span>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            va-b
+                                        </span>
+                                    </div>
+                                    <span class="block-code">
+                                        .va-b{<br>
+                                        <em></em>vertical-align:bottom<br>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="block-locate">
+                                        <p class="ex-box ex-box--1 ta-l" style="display:block;min-width:100%;border:1px dashed #ddd;background:#fff">
+                                            <span>left</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ta-l
+                                        </span>
+                                    </div>
+                                    <span class="block-code">
+                                        .ta-l{<br>
+                                        <em></em>text-align:left<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate">
+                                        <p class="ex-box ex-box--1 ta-c" style="display:block;min-width:100%;border:1px dashed #ddd;background:#fff">
+                                            <span>center</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-center">
+                                        <span class="font-l fw-b d-block">
+                                            ta-c
+                                        </span>
+                                    </div>
+                                    <span class="block-code">
+                                        .ta-c{<br>
+                                        <em></em>text-align:center;<br>
+                                        }
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="block-locate">
+                                        <p class="ex-box ex-box--1 ta-r" style="display:block;min-width:100%;border:1px dashed #ddd;background:#fff">
+                                            <span>right</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-right">
+                                        <span class="font-l fw-b d-block">
+                                            ta-r
+                                        </span>
+                                    </div>
+                                    <span class="block-code">
+                                        .ta-r{<br>
+                                        <em></em>text-align:right;<br>
+                                        }
+                                    </span>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

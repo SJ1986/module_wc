@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/css/main.css">
+    <link rel="stylesheet" href="resource/css/style.css">
+    <link rel="stylesheet" href="resource/css/fix.css">
+    <script type="text/javascript" src="resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="resource/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="resource/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="resource/js/aos.js"></script>
+    <script type="text/javascript" src="resource/js/slick.js"></script>
+    <script type="text/javascript" src="resource/js/swiper.min.js"></script>
+    <script type="text/javascript" src="resource/js/common.js"></script>
+    <script type="text/javascript" src="resource/js/main.js"></script>
+    <script type="text/javascript" src="resource/js/sub.js"></script>
+    <title>워드앤코드 가이드v1.2</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="d-flex">
+            <section class="lnb">
+                <h1><a href="javascript:void(0)"><img src="./resource/image/common/logo.png" alt="워드앤코드"></a></h1>
+                <ul class="codeGuide">
+                    <li>
+                        <a href="index.html" class="on">코딩가이드</a>
+                        <ul>
+                            <li><a href="./sub/sub1.html">기본</a></li>
+                            <li><a href="./sub/sub2.html">버튼</a></li>
+                            <li><a href="./sub/sub3.html">아이콘</a></li>
+                            <li><a href="./sub/sub4.html">입력폼</a></li>
+                            <li><a href="./sub/sub5.html">테이블</a></li>
+                            <li><a href="./sub/sub6.html">기능</a></li>
+                            <li><a href="./sub/sub7.html">웹접근성</a></li>
+                            <li><a href="./sub/sub8.html">가이드 사용서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="container">
+                <div id="content" class="p-4">
+                    <h4 class="fw-b">워드앤코드 - 가이드</h4>
+                    <div class="table-wrap mt_10">
+                        <table class="table-rows main">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:20%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">업무회사</th>
+                                <td>
+                                    워드앤코드
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">컨텐츠 제작</th>
+                                <td>
+                                    2020-09-15
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">최종 업데이트</th>
+                                <td>
+                                    2022-04-07
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="d-block mt_20 color-redPurple font-m">
+                        ※ 버전은 필수적으로 통일할것<br/><br/>
+                        ※ 기본은 bootstrap.css, bootstrap.js 만 가지고 있어도 됨.<br/><br/>
+                        ※ 귀속되어있는 파일이 있으면 부모파일만 받아도 상관없음.
+                    </p>
+                    <div class="d-flex belong-element mt_20">
+                        <p class="belong-item belong-item--html toolTip" data-id="tooltip-html" data-bs-toggle="tooltip" title="HTML 필요">HTML</p>
+                        <p class="belong-item belong-item--php toolTip" data-id="tooltip-php" data-bs-toggle="tooltip" title="PHP 필요">PHP</p>
+                        <p class="belong-item belong-item--boot toolTip" data-id="tooltip-boot" data-bs-toggle="tooltip" title="Bootstrap 필요">B</p>
+                        <p class="belong-item belong-item--css toolTip" data-id="tooltip-css" data-bs-toggle="tooltip" title="css 필요">css</p>
+                        <p class="belong-item belong-item--js toolTip" data-id="tooltip-js" data-bs-toggle="tooltip" title="js 필요">js</p>
+                    </div>
+                    <div class="d-flex">
+                        <ul class="lists lists--bar col-4">
+                            <li>
+                                <p class="font-l mt_30 fw-b">필수 고정 css :<br/> 
+                                    <a href="./resource/css/reset.css" class="display-inlineBlock mt_10 font-m underline"  target="_blank">reset.css</a><br/>
+                                    <a href="./resource/scss/fix.scss" class="display-inlineBlock mt_10 font-m underline" target="_blank">fix.scss</a>
+                                    <a href="./resource/css/fix.css" class="font-m underline" target="_blank">( fix.css )</a><br/>
+                                    <span>┕ </span><a href="./resource/scss/_mixin.scss" class="font-m" target="_blank">_mixin.scss</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-l mt_30 fw-b">서브 css :<br/> 
+                                    <a href="./resource/scss/style.scss" class="display-inlineBlock mt_10 font-m underline" target="_blank">style.scss</a><br/>
+                                    <span>┕ </span><a href="./resource/scss/_common.scss" class="font-m" target="_blank">_common.scss</a><br/>
+                                    <span>┕ </span><a href="./resource/scss/_mixin.scss" class="font-m" target="_blank">_mixin.scss</a><br/>
+                                    <span>┕ </span><a href="./resource/scss/_svg.scss" class="font-m" target="_blank">_svg.scss</a><br/>
+                                    <a href="./resource/scss/main.scss" class="display-inlineBlock mt_10 font-m underline" target="_blank">main.scss</a><br/>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="lists lists--bar col-8">
+                            <li>
+                                <p class="font-l mt_30 fw-m">
+                                    <span class="fw-b">적용 프레임워크 : <em class="fw-m">부트스트랩 v5.1(2022.03.16)</em></span><br/>
+                                    <a href="./resource/css/bootstrap.css" class="display-inlineBlock mt_10 font-m underline" target="_blank">bootstrap.css</a>
+                                    <a href="./resource/css/bootstrap.min.css" class="display-inlineBlock mt_10 font-m underline" target="_blank">( bootstrap.min.css )</a><br/>
+                                    <a href="./resource/js/bootstrap.bundle.js" class="display-inlineBlock mt_10 font-m underline" target="_blank">bootstrap.bundle.js</a>
+                                    <a href="./resource/js/bootstrap.bundle.min.js" class="display-inlineBlock mt_10 font-m underline" target="_blank">( bootstrap.bundle.min.js) </a><br/>
+                                    <span>┕ </span><a href="./resource/js/bootstrap.js" class="display-inlineBlock  font-m" target="_blank">bootstrap.js</a>
+                                    <a href="./resource/js/bootstrap.min.js" class="display-inlineBlock  font-m underline" target="_blank">( bootstrap.min.js )</a><br/>
+                                    <span>┕ </span><a href="./resource/js/popper.js" class="display-inlineBlock font-m" target="_blank">popper.js</a><br/>
+                                    <a href="./resource/css/bootstrap.min.css" class="display-inlineBlock mt_10 font-m underline" target="_blank">bootstrap.min.css</a><br/>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

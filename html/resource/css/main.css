@@ -1,0 +1,34 @@
+.table-rows.main tr:first-child th {
+  border-top: 4px solid #d71921;
+}
+
+.table-rows.main tr:first-child td {
+  border-top: 4px solid #665c50;
+}
+
+.table-rows.main tr th {
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #faf4ec;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  font-size: 13px;
+  text-align: left;
+}
+
+.table-rows.main tr td {
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  font-size: 13px;
+}
+
+/* HOVER ======================================================================================================= */
+.lists--bar a:hover {
+  color: #1b00ff;
+}
+
+/* RESPONSIVE ================================================================================================== */

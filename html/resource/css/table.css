@@ -1,0 +1,4 @@
+@charset "UTF-8";
+/* no change css for cooperate */
+.tableSt{width:100%;}
+.tableSt caption{position:absolute;top:-9999px;left:9999px;}

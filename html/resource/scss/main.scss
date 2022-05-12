@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.table-rows{
+    &.main{
+        tr{
+            &:first-child{
+                th{
+                    border-top:4px solid #d71921;
+                }
+                td{
+                    border-top:4px solid #665c50;
+                }
+            }
+            th{
+                padding:10px 20px;
+                box-sizing:border-box;
+                background-color:#faf4ec;
+                border:1px solid #d9d9d9;
+                border-left:none;
+                font-size:13px;
+                text-align:left;
+            }
+            td{
+                padding:10px 20px;
+                box-sizing:border-box;
+                border:1px solid #d9d9d9;
+                border-right:none;
+                font-size:13px;
+            }
+        }
+    } 
+}
+
+/* HOVER ======================================================================================================= */
+.lists--bar{
+    a:hover{
+        color:#1b00ff
+    }
+}
+
+/* RESPONSIVE ================================================================================================== */
