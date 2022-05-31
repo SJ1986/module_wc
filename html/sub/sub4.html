@@ -9,36 +9,120 @@
         <link rel="stylesheet" href="../resource/css/fix.css">
         <script type="text/javascript" src="../resource/js/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
-        <script type="text/javascript" src="../resource/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../resource/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="../resource/js/popper.min.js"></script>
         <script type="text/javascript" src="../resource/js/aos.js"></script>
         <script type="text/javascript" src="../resource/js/slick.js"></script>
         <script type="text/javascript" src="../resource/js/swiper.min.js"></script>
         <script type="text/javascript" src="../resource/js/common.js"></script>
         <script type="text/javascript" src="../resource/js/sub.js"></script>
-        <title>워드앤코드 가이드v1.2</title>
+        <title>워드앤코드 가이드v1.2 &gt; 버튼</title>
     </head>
-<body>
-    <div class="wrap">
-        <section class="lnb">
-            <h1><a href="../index.html"><img src="../resource/image/common/logo.png" alt="워드앤코드"></a></h1>
-            <ul class="codeGuide">
-                <li>
-                    <a href="../index.html" class="on">코딩가이드</a>
-                    <ul>
-                        <li><a href="sub1.html">기본</a></li>
-                        <li><a href="sub2.html">버튼</a></li>
-                        <li><a href="sub3.html">아이콘</a></li>
-                        <li><a href="sub4.html" class="on">입력폼</a></li>
-                        <li><a href="sub5.html">테이블</a></li>
-                        <li><a href="sub6.html">기능</a></li>
-                        <li><a href="sub7.html">웹접근성</a></li>
-                        <li><a href="sub8.html">가이드 사용서</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="container"></section>
+    <body>
+        <div class="wrap">
+            <section class="lnb">
+                <h1><a href="../index.html"><img src="../resource/image/common/logo.png" alt="워드앤코드"></a></h1>
+                <ul class="codeGuide">
+                    <li>
+                        <a href="../index.html" class="on">코딩가이드</a>
+                        <ul>
+                            <li><a href="sub1.html">기본</a></li>
+                            <li><a href="sub2.html">버튼</a></li>
+                            <li><a href="sub3.html">아이콘</a></li>
+                            <li><a href="sub4.html" class="on">입력폼</a></li>
+                            <li><a href="sub5.html">테이블</a></li>
+                            <li><a href="sub6.html">기능</a></li>
+                            <li><a href="sub7.html">웹접근성</a></li>
+                            <li><a href="sub8.html">가이드 사용서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="container">
+                <div id="content">
+                    <div class="cg_schArea">
+                        <div class="sch  d-flex align-center">
+                            <label for="sch__input" class="font-s mr_10 color-white">
+                                SEARCH
+                            </label>
+                            <div class="form-row d-flex">
+                                <input type="text" class='headSch-input' id="sch__input" autocomplete="off" title="검색어입력" placeholder="검색어 입력">
+                                <button type="button" class='headSch-btn' title="검색버튼">
+                                    <img src="../resource/image/common/icon/icon_finder_b.png" alt="">
+                                </button>
+                            </div>
+                            <!--<div class="navigation d-flex ml_10">
+                                <a href="" type="button" class="navigation-item navigation-item__prev" onclick=""></a>
+                                <span id="navigation-item-current" class="navigation-item__title">
+                                    title
+                                </span>
+                                <a href="" type="button" class="navigation-item navigation-item__next ml_5" onclick=""></a>
+                            </div>-->
+                        </div>
+                        <h4 class="d-flex align-center p-3 fw-b text-left">
+                            FORM
+                            <div class="d-flex ml_20 belong-element">
+                                <p class="belong-item belong-item--html toolTip" data-id="tooltip-html" data-bs-toggle="tooltip" title="HTML 필요">HTML</p>
+                                <p class="belong-item belong-item--php toolTip" data-id="tooltip-php" data-bs-toggle="tooltip" title="PHP 필요">PHP</p>
+                                <p class="belong-item belong-item--boot toolTip" data-id="tooltip-boot" data-bs-toggle="tooltip" title="Bootstrap 필요">B</p>
+                                <p class="belong-item belong-item--css toolTip" data-id="tooltip-css" data-bs-toggle="tooltip" title="css 필요">css</p>
+                                <p class="belong-item belong-item--js toolTip" data-id="tooltip-js" data-bs-toggle="tooltip" title="js 필요">js</p>
+                                <p class="belong-item belong-item--scss toolTip" data-id="tooltip-scss" data-bs-toggle="tooltip" title="scss 필요">scss</p>
+                            </div>
+                        </h4>
+                    </div>
+                    <div class="article-wrap scrollspy-example">
+                        <div class="find-tabs navbar" id="find-tabs">
+                            <p class="font-l fw-b underline-pad">FORM</p>
+                            <a href="#form-default" class="nav-link active">default</a>
+                            <a href="#form-input" class="nav-link">input</a>
+                            <a href="#form-select" class="nav-link">select</a>
+                            <a href="#form-checkbox" class="nav-link">checkbox</a>
+                            <a href="#form-radio" class="nav-link">radio</a>
+                        </div>
+                        <article class="article-item" id="form-default">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">default</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--boot" title="">B</p>
+                                </div>
+                            </div>
+                            <ul class="mt_40 d-flex flex-wrap">
+                                <li>
+                                    <div class="d-flex">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="input" aria-label="input" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group ml_10">
+                                            <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                        </div>
+                                        <div class="input-group ml_10">
+                                            <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Text input with radio button">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item" id="form-input">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">input</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css" title="">style</p>
+                                </div>
+                            </div>
+                            <ul class="mt_40 d-flex flex-wrap">
+                                <li></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
     </div>
 </body>
 </html>

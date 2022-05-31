@@ -75,31 +75,230 @@
                         <div class="find-tabs navbar" id="find-tabs">
                             <p class="font-l fw-b underline-pad">BUTTON</p>
                             <a href="#button-default" class="nav-link active">default</a>
-                            <a href="#display" class="nav-link">display</a>
-                            <a href="#position" class="nav-link">position</a>
-                            <a href="#margin" class="nav-link">margin</a>
-                            <a href="#padding" class="nav-link">padding</a>
-                            <a href="#color" class="nav-link">color</a>
-                            <a href="#textAlign" class="nav-link">text-align</a>
+                            <a href="#button-hover" class="nav-link">hover</a>
+                            <a href="#button-animation" class="nav-link">animation</a>
                         </div>
                         <article class="article-item" id="button-default">
                             <div class="d-flex align-center">
                                 <h3 class="fw-m highlight highlight-yellow">default</h3>
                                 <div class="d-flex belong-element ml_20">
-                                    <p class="belong-item belong-item--css" title="">fix</p>
+                                    <p class="belong-item belong-item--css" title="">style</p>
                                 </div>
                             </div>
-                            <ul class="article-item__piece mt_40 d-flex flex-wrap">
+                            <ul class="mt_40 d-flex flex-wrap">
                                 <li>
-                                    <h1 class="fw-m d-flex align-center mb_10">
-                                        h1
-                                    </h1>
-                                    <span class="block-code">
-                                        h1{<br/>
-                                        <em></em>font-size:32px;<br/>
-                                        }
-                                    </span>
+                                    <button type="button" class="btn btn-solid--1">border</button>
                                 </li>
+                                <li>
+                                    <button type="button" class="btn btn-dashed--1">dashed</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-dotted--1">dotted</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-double--3">double</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-groove--3">groove</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ridge--3">ridge</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-inset--3">inset</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-outset--3">outset</button>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="button-hover">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">hover</h3>
+                                <div class="d-flex belong-element ml_20">
+                                    <p class="belong-item belong-item--css" title="">style</p>
+                                </div>
+                            </div>
+                            <ul class="mt_40 d-flex flex-wrap">
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--basic1">basic1</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--emboss1">emboss1</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--borderCross1">
+                                        <span>borderCross1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--borderCross2">
+                                        <span>borderCross2</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--borderTb1">
+                                        <span>borderTb1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--borderRotate1">
+                                        <span>borderRotate1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--zoomIn1">
+                                        <span>borderzoomIn1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--twinkle1">
+                                        bordertwinkle1<span class="dot"></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--flipTop1">
+                                        <span>flipTop1~</span><span>flipTop1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--flipRight1">
+                                        <span>flipRight1~</span><span>flipRight1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--flipLeft1">
+                                        <span>flipLeft1~</span><span>flipLeft1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--flipBottom1">
+                                        <span>flipBottom1~</span><span>flipBottom1</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeTop1">
+                                        swipeTop1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeTop2">
+                                        swipeTop2
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeLeft1">
+                                        swipeLeft1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeLeft2">
+                                        swipeLeft2
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeLeft3">
+                                        swipeLeft3
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeRight1">
+                                        swipeRight1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeRight2">
+                                        swipeRight2
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeBottom1">
+                                        swipeBottom1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeBottom2">
+                                        swipeBottom2
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeDouble3">
+                                        swipeDouble3
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeDouble4">
+                                        swipeDouble4
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeDouble5">
+                                        swipeDouble5
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeSlice1">
+                                        swipeSlice1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--swipeSlice2">
+                                        swipeSlice2
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--positionAware">
+                                        positionAware
+                                        <span></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--alternate">
+                                        <span>alternate</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--overlapVertical">
+                                        <span>overlapVertical</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--overlapHorizontal">
+                                        <span>horizontal</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--collision">
+                                        collision
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--pulse">
+                                        pulse
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--raise">
+                                        raise
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-hover btn-hover--offset">
+                                        offset
+                                    </button>
+                                </li>
+                                
+                            </ul>
+                        </article>
+                        <article class="article-item pt_70" id="button-animation">
+                            <div class="d-flex align-center">
+                                <h3 class="fw-m highlight highlight-yellow">animation</h3>
+                            </div>
+                            <ul class="mt_40 d-flex flex-wrap">
+                                <li>
+                                    
+                                </li>
+                                <li></li>
                             </ul>
                         </article>
                     </div>
